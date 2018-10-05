@@ -1,22 +1,47 @@
 <!DOCTYPE html>
 <head>
-<link rel="stylesheet" type="text/css" href="style.css">
+<!-- <link rel="stylesheet" type="text/css" href="reset.css"> -->
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 </head>
 <body>
+    
     <header>
-        <h1>Andrew Maurer</h1>
-        <nav>
-            <a>About</a>
-            <a>Portfolio</a>
-            <a>Contact</a>
-        </nav>
+        <div class="content-width">
+            <div class="logo">
+                <h1>Andrew Maurer</h1>
+            </div>
+            <nav>
+                <a id="about" href="index.html">About</a>
+                <a id="portfolio" href="portfolio.html">Portfolio</a>
+                <a id="Contact" href="contact.html">Contact</a>
+            </nav>
+        </div>
     </header>
 
+    <div class="content">
+        <div class="content-width-2" id=forms>
+            <h2>Contact</h2>
 
-    <h2>Contact</h2>
+                <form>
+                    Name<br>
+                    <input type="text" placeholder="John Smith">
+                    <br>
+                    E-mail<br>
+                    <input type="text" placeholder="example@gmail.com">
+                    <br>
+                    Message<br>
+                    <input type="text" value="" id=message><br>
 
-    <form>Name</form>
-    <form>e-mail</form>
-    <form>Message</form>
+                    <input type="submit" value="Submit">
+
+
+                </form>
+                
+
+        </div>
+    </div>
+
+    <footer>Copyright&#169; 2018</footer>
 
 </body>
