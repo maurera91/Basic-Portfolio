@@ -22,6 +22,9 @@ img{
     float:left;
     /*floats the image to the left of the content box*/
     margin-right:30px; 
+    position: relative;
+    top: 5px;
+    /*moving the picture down little to better sit in the text */
 }
 
 header{
@@ -111,15 +114,10 @@ a{
     margin-top: 20px;
     width: 960px;
     height: 500px;
+    padding-bottom: 10px;
+    /*creates a little room for the text */
 }
 /*content width without flexbox */
-.text-box{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    /*evenly spaces the content in the flexbox */
-    height: 300px;
-}
 form{
     width: 97%;
     margin: 0px 0px 0px 20px;
@@ -183,4 +181,10 @@ h3{
     display:flex;
     flex-wrap:wrap;
     /* creates container for the portfolio items, sets it as a flex box and sets it to flex wrap so the items will display correctly, wrapping through the entire space*/
+}
+p{
+    line-height: 1.5;
+    font-size: 25px;
+    margin: 0px 10px 10px 10px;
+    /* gives cusion to the outside of the border*/
 }
