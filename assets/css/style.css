@@ -2,34 +2,48 @@ body{
     margin:0;
     color:#777777;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    /*sets font and text color for the main content of the site*/
     height:100%;
+    /*apllies to whole page*/
+
 }
 h2{
     font-family: 'Georgia', "Times", "Times New Roman", serif;
+    /*specifies font family for the h2 tag/ takes priority over body tag*/
     color: #4aaaa5;
     border-bottom: solid;
     border-color:#cccccc;
     padding-bottom: 20px;
     margin: 20px 20px 30px 20px;
+    /*postions tag allowing for aestetic space around the object*/
 }
 img{
-    margin-left: 20px; 
+    margin-left: 20px;
+    float:left;
+    /*floats the image to the left of the content box*/
+    margin-right:30px; 
 }
 
 header{
     display:flex;
+    /* defines as a flex box */
     justify-content: center;
+    /*centers the header in the page */
     background: #ffffff;
     font-family: 'Georgia', "Times", "Times New Roman", serif;
+    /*gives same font family as h2/other headers */
     height:80px;
     border-bottom: solid 2px  #cccccc;
+    /* sets line at bottom of header breaking off from content */
 
 }
 footer{
     line-height: 60px;
+    /*sets text to the bottom of the container */
     position: fixed;
     left:0;
     bottom:0;
+    /* locks the footer to the bottom of the page */
     padding-top:7px;
     border-top:solid 5px #4aaaa5;
     background: #666666;
@@ -38,11 +52,13 @@ footer{
     color: #cccccc;
     font-size: 12px;
     width: 100%;
+    /* ensures that the footer spans the width of the page */
 }
 .content{
     background-image: url("../images/gravel.png");
+    /* sets the background image for the content section of the site */
     display: flex;
-    border-color: #dddddd; 
+    border-color: solid 1px #dddddd; 
     justify-content: center;
     height: 100vh;
 }
@@ -53,6 +69,7 @@ h1{
 }
 .logo{
     justify-content: flex-start;
+    /*brings the content to the begining of the flexbox */
     height: 80px;
     width: 250px;
     background: #4aaaa5;
@@ -62,17 +79,22 @@ h1{
     background: #ffffff;
     display:flex;
     justify-content: space-between;
+    /*defines the arrangments of elements in the flexbox so that they go to either edge of the box */
     width: 960px;
     height: 80px;
+    /* define the dimensions of the box */
 }
 #forms{
     flex-direction: column;
+    /*defines the arrangment of the elements so that they will stack on top of each other */
 }
 a{
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    /* setting the font family for the a tag */
     position: relative;
     top: 30px;
     padding:0px 20px 0px 20px;
+    /* */
     text-decoration: none;
     color:#777777;
     
@@ -83,16 +105,19 @@ a{
 #portfolio{
     border-right: solid 1px #cccccc
 }
+/*creates borders between the nav bar items */
 .content-width-2{
     background: white;
     margin-top: 20px;
     width: 960px;
     height: 500px;
 }
+/*content width without flexbox */
 .text-box{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    /*evenly spaces the content in the flexbox */
     height: 300px;
 }
 form{
@@ -137,20 +162,25 @@ input[type=submit] {
 #Rock_Paper_Scissors{
     background-image:url("../images/abstract-q-c-250-200-8.jpg");
 }
+/*setting the background images of the portfolio items */
 h3{
     position: relative;
     top: 120px;
+    /*postions the header relative to its parent, and arranges it with the portfolio item */
     text-align: center;
     background: #4aaaa5;
     color: #ffffff;
     line-height: 50px;
     height:50px;
     width:100%;
+    /*fills entire parent element*/
     font-family: 'Georgia', "Times", "Times New Roman", serif;
+    /*header font family  */
 }
 #container{
     height:670px;
     width:675px;
     display:flex;
     flex-wrap:wrap;
+    /* creates container for the portfolio items, sets it as a flex box and sets it to flex wrap so the items will display correctly, wrapping through the entire space*/
 }
